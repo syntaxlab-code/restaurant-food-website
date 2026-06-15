@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>My Restaurant | Fresh Taste, Best Quality</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+<header class="hero" id="home">
+    <div class="overlay"></div>
+
+    <nav>
+        <div class="logo">Food <span>Lover</span></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#reservation" class="btn">Book Now</a>
+    </nav>
+
+    <div class="hero-text">
+        <h1> <span>Delicious Food</span> For You</h1>
+        <p>Fresh taste, best quality, amazing experience</p>
+        <a href="#menu" class="btn">View Menu</a>
+    </div>
+</header>
+
+<!-- MENU SECTION  -->
+<section id="menu" class="menu">
+    <div class="container">
+        <div class="section-title">Our Menu</div>
+        <div class="menu-items">
+            <!-- Pizza -->
+            <div class="item">
+                <img class="item-img" src="Delicious Pizza.jpeg" alt="Delicious Pizza" loading="lazy">
+                <h3>Pizza</h3>
+                <p>Cheesy & Delicious</p>
+                <div class="price-tag">$12.90</div>
+            </div>
+            <!-- Burger -->
+            <div class="item">
+                <img class="item-img" src="burger.jpeg" alt="Juicy Burger" loading="lazy">
+                <h3>Burger</h3>
+                <p>Juicy & Fresh</p>
+                <div class="price-tag">$9.90</div>
+            </div>
+            <!-- Pasta -->
+            <div class="item">
+                <img class="item-img" src="pasta.jpeg" alt="Italian Pasta" loading="lazy">
+                <h3>Pasta</h3>
+                <p>Italian Taste</p>
+                <div class="price-tag">$11.50</div>
+            </div>
+            <!-- Grilled Salmon -->
+            <div class="item">
+                <img class="item-img" src="grilled-salmon.jpeg" alt="Grilled Salmon" loading="lazy">
+                <h3>Grilled Salmon</h3>
+                <p>With lemon butter</p>
+                <div class="price-tag">$18.90</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OFFERS SECTION -->
+<section id="offers" class="offers">
+    <div class="container">
+        <div class="section-title">Weekly Offers</div>
+        <div class="offers-grid">
+            <div class="offer-card">
+                <i class="fas fa-coffee"></i>
+                <h3>Breakfast Combo</h3>
+                <p>Any coffee + croissant for $6.99</p>
+            </div>
+            <div class="offer-card">
+                <i class="fas fa-wine-glass-alt"></i>
+                <h3>Happy Hour</h3>
+                <p>5PM - 7PM · 20% off drinks</p>
+            </div>
+            <div class="offer-card">
+                <i class="fas fa-users"></i>
+                <h3>Family Feast</h3>
+                <p>2 mains + dessert · $34.90</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RESERVATION SECTION -->
+<section id="reservation" class="reservation">
+    <div class="container">
+        <div class="section-title">Reserve a Table</div>
+        <div class="reserve-form">
+            <form id="reservationForm">
+                <div class="form-row">
+                    <div class="form-group"><input type="text" id="resName" placeholder="Full Name" required></div>
+                    <div class="form-group"><input type="email" id="resEmail" placeholder="Email Address" required></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group"><input type="tel" id="resPhone" placeholder="Phone Number"></div>
+                    <div class="form-group"><input type="date" id="resDate" required></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <select id="resTime" required>
+                            <option value="">Select Time</option>
+                            <option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option>
+                            <option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="resGuests" required>
+                            <option value="">Guests</option>
+                            <option>1</option><option>2</option><option>3</option><option>4</option>
+                            <option>5</option><option>6+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group"><textarea rows="2" id="resSpecial" placeholder="Special requests (allergies, celebrations...)"></textarea></div>
+                <button type="submit" class="submit-btn"><i class="fas fa-calendar-check"></i> Book Now</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-title">Contact Us</div>
+        <div class="contact-flex">
+            <div class="contact-info">
+                <h3><i class="fas fa-store"></i> Visit Our Place</h3>
+                <div class="detail-item"><i class="fas fa-map-marker-alt"></i> <span>123 Flavor Street, Downtown, Food City</span></div>
+                <div class="detail-item"><i class="fas fa-phone-alt"></i> <span>+1 (555) 789-1234</span></div>
+                <div class="detail-item"><i class="far fa-clock"></i> <span>Mon - Sun: 11:00 AM – 11:00 PM</span></div>
+                <div class="detail-item"><i class="fas fa-envelope"></i> <span>Foodlover.com</span></div>
+                <div class="social-links" style="margin-top: 25px;">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form id="contactForm">
+                    <input type="text" id="contactName" placeholder="Your Name" required>
+                    <input type="email" id="contactEmail" placeholder="Your Email" required>
+                    <textarea rows="4" id="contactMsg" placeholder="How can we help you?"></textarea>
+                    <button type="submit" class="send-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Food Lover. All Rights Reserved. Fresh taste, best quality.</p>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+</footer>
+</body>
+</html>
